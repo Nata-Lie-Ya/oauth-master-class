@@ -19,7 +19,7 @@ window.onload = () => {
   document.getElementById("suggest").onclick = () => {
     YaAuthSuggest.init(
       {
-      client_id: "bec5464f52b64e23bfaaa8fd0743b634", 
+      client_id: "3200485935a24639abe1b82885b2a52e", 
       response_type: "token",
       redirect_uri: "https://oauth-master-class-sable.vercel.app/token.html"
   },
@@ -38,7 +38,7 @@ window.onload = () => {
   document.getElementById("button").onclick = () => {
     window.YaAuthSuggest.init(
       {
-        client_id: "bec5464f52b64e23bfaaa8fd0743b634",
+        client_id: "3200485935a24639abe1b82885b2a52e",
         response_type: "token",
         redirect_uri: "https://oauth-master-class-sable.vercel.app/token.html",
       },
