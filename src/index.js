@@ -20,8 +20,8 @@ window.onload = () => {
     YaAuthSuggest.init(
       {
       client_id: "07eb26022d3148059919851c7929b2b6", 
-      response_type: 'token',
-      redirect_uri: 'https://oauth-master-class-sable.vercel.app//token.html'
+      response_type: "token",
+      redirect_uri: "https://oauth-master-class-sable.vercel.app//token.html"
   },
          "https://oauth-master-class-sable.vercel.app/"
   )
