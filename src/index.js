@@ -20,21 +20,20 @@ window.onload = () => {
     YaAuthSuggest.init({
       client_id: '--07eb26022d3148059919851c7929b2b6--', 
       response_type: 'token',
-      redirect_uri: '--https://oauth-master-class-sable.vercel.app//token.html--'
+      redirect_uri: 'https://oauth-master-class-sable.vercel.app//token.html'
   };
          "https://oauth-master-class-sable.vercel.app/"
   )
    .then(({  handler }) => handler())
-     .then(data => console.log('Сообщение с токеном', data))
-    .catch(error => console.log('Обработка ошибки', error));
      .then(async (data) => {
        const result = await fetchYandexData(data.access_token);
        
         authorize(result);
        
        console.log(result, data);
-        })
+    })
     .catch((error) => console.log("Что-то пошло не так: ", error));
+    };
   document.getElementById("button").onclick = () => {
     window.YaAuthSuggest.init(
       {
